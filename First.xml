@@ -1,29 +1,24 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="movement_forward" id="10" x="79" y="68">
-    <next>
-      <block type="robot_delay" id="12" inline="true">
-        <value name="DELAY">
-          <block type="math_number" id="19">
-            <field name="NUM">2000</field>
-          </block>
-        </value>
+  <block type="controls_whileUntil" id="14" inline="false" x="8" y="18">
+    <field name="MODE">UNTIL</field>
+    <value name="NUMBER">
+      <block type="sensor_button" id="21">
+        <field name="OBJECT">ENTER</field>
+      </block>
+    </value>
+    <statement name="DO">
+      <block type="multimedia_playwav" id="28">
+        <field name="WAV">_SndTest.w</field>
         <next>
-          <block type="movement_right" id="70">
-            <next>
-              <block type="robot_delay" id="71" inline="true">
-                <value name="DELAY">
-                  <block type="math_number" id="72">
-                    <field name="NUM">2000</field>
-                  </block>
-                </value>
-                <next>
-                  <block type="movement_stop" id="44"></block>
-                </next>
+          <block type="robot_delay" id="30" inline="true">
+            <value name="DELAY">
+              <block type="math_number" id="37">
+                <field name="NUM">250</field>
               </block>
-            </next>
+            </value>
           </block>
         </next>
       </block>
-    </next>
+    </statement>
   </block>
 </xml>
