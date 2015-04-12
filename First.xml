@@ -7,6 +7,9 @@
       </block>
     </value>
     <statement name="DO">
+      <block type="oled_cleardisplay" id="258"></block>
+    </statement>
+    <next>
       <block type="controls_whileUntil" id="14" inline="false">
         <field name="MODE">UNTIL</field>
         <value name="NUMBER">
@@ -141,6 +144,6 @@
           <block type="movement_stop" id="142"></block>
         </next>
       </block>
-    </statement>
+    </next>
   </block>
 </xml>
