@@ -1,7 +1,7 @@
 First
 ================
 
-My First Program
+Scratch: Light Following Program
 
 ### Project Information
 ```
